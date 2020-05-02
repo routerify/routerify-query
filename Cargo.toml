@@ -1,0 +1,21 @@
+[package]
+name = "routerify-query"
+version = "1.0.0"
+description = "A Routerify middleware which parses the request query string."
+homepage = "https://github.com/routerify/routerify-query"
+repository = "https://github.com/routerify/routerify-query"
+keywords = ["routerify", "hyper-rs", "middleware", "querystring"]
+categories = ["asynchronous", "web-programming", "web-programming::http-server"]
+authors = ["Rousan Ali <hello@rousan.io>"]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+routerify = "1.0"
+hyper = "0.13"
+url = "2.1"
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["full"] }
+stream-body = "0.1"

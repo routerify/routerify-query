@@ -1,26 +1,3 @@
-[![Github Actions Status](https://github.com/routerify/routerify-query/workflows/Test/badge.svg)](https://github.com/routerify/routerify-query/actions)
-[![crates.io](https://img.shields.io/crates/v/routerify-query.svg)](https://crates.io/crates/routerify-query)
-[![Documentation](https://docs.rs/routerify-query/badge.svg)](https://docs.rs/routerify-query)
-[![MIT](https://img.shields.io/crates/l/routerify-query.svg)](./LICENSE)
-
-# routerify-query
-
-A [`Routerify`](https://github.com/routerify/routerify) middleware which parses the request query string and populates in the `req` object.
-
-[Docs](https://docs.rs/routerify-query)
-
-## Usage
-
-First add this to your `Cargo.toml`:
-
-```toml
-[dependencies]
-routerify = "1.0"
-routerify-query = "1.0.0"
-```
-
-An example:
-```rust
 use hyper::{Body, Request, Response, Server};
 use routerify::{Router, RouterService};
 // Import the query_parser function and the RequestQueryExt trait.
@@ -67,8 +44,3 @@ async fn main() {
         eprintln!("Server error: {}", err);
     }
 }
-```
-
-## Contributing
-
-Your PRs and suggestions are always welcome.
