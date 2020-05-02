@@ -9,17 +9,18 @@ A [`Routerify`](https://github.com/routerify/routerify) middleware which parses 
 
 [Docs](https://docs.rs/routerify-query)
 
-## Usage
+## Install
 
-First add this to your `Cargo.toml`:
+Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
 routerify = "1.0"
-routerify-query = "1.0.0"
+routerify-query = "1.0" 
 ```
 
-An example:
+## Example
+
 ```rust
 use hyper::{Body, Request, Response, Server};
 use routerify::{Router, RouterService};
