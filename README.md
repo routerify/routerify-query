@@ -16,7 +16,7 @@ Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
 routerify = "1.0"
-routerify-query = "1.0.0"
+routerify-query = "1.0"
 ```
 
 ## Example
