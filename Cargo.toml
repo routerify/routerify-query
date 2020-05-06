@@ -1,6 +1,6 @@
 [package]
 name = "routerify-query"
-version = "1.0.0"
+version = "1.1.0"
 description = "A Routerify middleware which parses the request query string."
 homepage = "https://github.com/routerify/routerify-query"
 repository = "https://github.com/routerify/routerify-query"
