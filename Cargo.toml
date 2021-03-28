@@ -1,6 +1,6 @@
 [package]
 name = "routerify-query"
-version = "2.0.0"
+version = "1.1.0"
 description = "A Routerify middleware which parses the request query string."
 homepage = "https://github.com/routerify/routerify-query"
 repository = "https://github.com/routerify/routerify-query"
@@ -12,9 +12,10 @@ license = "MIT"
 edition = "2018"
 
 [dependencies]
-routerify = "2"
-hyper = "0.14"
+routerify = "1.1"
+hyper = "0.13"
 url = "2.1"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "0.2", features = ["full"] }
+stream-body = "0.1"
