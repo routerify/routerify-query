@@ -15,8 +15,8 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-routerify = "1.1"
-routerify-query = "1.1" 
+routerify = "3"
+routerify-query = "3" 
 ```
 
 ## Example
