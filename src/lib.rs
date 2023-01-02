@@ -102,14 +102,14 @@ pub(crate) struct Query(pub HashMap<String, String>);
 pub fn query_parser<B, E>() -> Middleware<B, E>
 where
     B: HttpBody + Send + Sync + Unpin + 'static,
-    E: std::error::Error + Send + Sync + Unpin + 'static,
+    E: Into<Box<dyn std::error::Error + Send + Sync>> + 'static,
 {
     Middleware::pre(query_parser_middleware_handler::<E>)
 }
 
 async fn query_parser_middleware_handler<E>(mut req: Request<hyper::Body>) -> Result<Request<hyper::Body>, E>
 where
-    E: std::error::Error + Send + Sync + Unpin + 'static,
+    E: Into<Box<dyn std::error::Error + Send + Sync>> + 'static,
 {
     let mut q = Query(HashMap::new());
 
